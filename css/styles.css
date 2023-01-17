@@ -3,5 +3,11 @@ body{
 }
 
 .alturaContenido{
-    height: 1200px;
+    height: 650px;
+    margin-top: 150px;
+}
+
+.alturaContenido img{
+    width: 500px;
+    height: 500px;
 }
