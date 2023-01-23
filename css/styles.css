@@ -1,13 +1,17 @@
-body{
+body {
     background-color: #f5f1f1;
 }
 
-.alturaContenido{
+.alturaContenido {
     height: 650px;
     margin-top: 150px;
 }
 
-.alturaContenido img{
+.alturaContenido img {
     width: 500px;
     height: 500px;
+}
+
+.loginAltura {
+    margin-top: 150px;
 }
