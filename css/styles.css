@@ -1,17 +1,15 @@
 body {
-    background-color: #f5f1f1;
+    background-color: #b7c3ff;
 }
 
-.alturaContenido {
-    height: 650px;
-    margin-top: 150px;
+body header {
+    background-color: #ff4545;
 }
 
-.alturaContenido img {
-    width: 500px;
-    height: 500px;
+.profileView {
+    height: 1500px;
 }
 
-.loginAltura {
-    margin-top: 150px;
+.footerColor {
+    background-color: #4c6aff;
 }

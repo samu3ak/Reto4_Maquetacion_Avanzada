@@ -1,0 +1,17 @@
+.alturaContenido {
+    height: 650px;
+}
+
+.alturaContenido img {
+    width: 500px;
+    height: 500px;
+}
+
+.borderColor {
+    border-top: 2px solid #7788e0;
+    border-bottom: 2px solid #7788e0;
+}
+
+.carouselColor {
+    background-color: #9ca9ec;
+}
