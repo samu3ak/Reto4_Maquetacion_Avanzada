@@ -31,8 +31,8 @@ $(document).ready(function () {
                         var user = new Usuario(nombre, email, fechaNac, contrasenha);
                         localStorage.setItem("user", JSON.stringify(user));
                         let success = document.createElement("h1");
-                        $(success).html("Usuario creado satisfactoriamente");
-                        $(success).addClass("display-6");
+                        $(success).html("Usuario creado satisfactoriamente, puede iniciar sesión");
+                        $(success).addClass("display-6 text-center");
                         $(form).after(success);
                         $(form).remove();
                     }

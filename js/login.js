@@ -28,7 +28,7 @@ $(document).ready(function () {
                         $(aviso).css("display", "block");
                     } else {
                         localStorage.setItem("logged", "true");
-                        window.location.href = "../index.html";
+                        window.location.href = "./profile.html";
                     }
                 }, false)
             })

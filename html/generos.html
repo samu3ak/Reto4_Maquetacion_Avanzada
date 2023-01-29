@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>YourGamingDB - Inicio de sesión</title>
+    <title>YourGamingDB - Géneros</title>
     <link rel="icon" type="image/x-icon" href="../images/logo.png">
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -14,7 +14,8 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
-    <link href="../css/login.css" rel="stylesheet">
+    <link href="../css/register.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/generos.css">
 
 </head>
 
@@ -35,7 +36,8 @@
                         </form>
                     </div>
                     <div class="col-lg-12 text-center mt-4">
-                        <a href="./generos.html"><button type="button" class="btn btn-danger text-dark fw-bolder">Filtrar Búsqueda Por Géneros</button></a>
+                        <a href="./generos.html"><button type="button"
+                                class="btn btn-danger text-dark fw-bolder">Filtrar Búsqueda Por Géneros</button></a>
                     </div>
                 </div>
             </div>
@@ -52,32 +54,57 @@
             </div>
         </div>
     </header>
-    <main>
-        <div class="container-fluid mt-5 py-5 loginColor">
-            <div class="row text-center mb-5">
-                <h1 class="display-6">Iniciar Sesión a YourGamingDB</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 text-start d-none d-lg-block">
-                    <img class="img-fluid" src="../images/spelunky.png" width="350" height="500">
+    <main class="p-4">
+        <div class="container-fluid genero rounded-3 p-5">
+            <div class="row g-5">
+                <div class="col-12">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <h1 class="display-6">Bullet Hell</h1>
+                        </div>
+                        <div class="col-12">
+                            <img class="img-fluid" src="../images/etg.jpg" alt="">
+                            <img class="img-fluid" src="../images/th6.png" alt="" width="220">
+                            <img class="img-fluid" src="../images/th12.png" alt="" width="374">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-sm-12">
-                    <form class="row g-5 needs-validation">
-                        <div class="col-12 text-center">
-                            <label for="username" class="form-label">Nombre de usuario</label>
-                            <input type="text" class="form-control text-center" id="username" required>
+                <div class="col-12">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <h1 class="display-6">Terror</h1>
                         </div>
-                        <div class="col-12 text-center">
-                            <label for="inputPassword4" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control text-center" id="inputPassword4" required>
+                        <div class="col-12">
+                            <img class="img-fluid" src="../images/visage.png" alt="">
+                            <img class="img-fluid" src="../images/madison.png" alt="" width="220">
+                            <img class="img-fluid" src="../images/slender.png" alt="" width="346">
+                            <img class="img-fluid" src="../images/outlast.png" alt="" width="389">
                         </div>
-                        <div class="col-12 text-center mt-5">
-                            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
-                <div class="col-lg-5 text-end d-none d-lg-block">
-                    <img class="img-fluid" src="../images/dk3.jpg" width="350" height="500">
+                <div class="col-12">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <h1 class="display-6">Mundo Abierto</h1>
+                        </div>
+                        <div class="col-12">
+                            <img class="img-fluid" src="../images/gtav.jpg" alt="" width="500">
+                            <img class="img-fluid" src="../images/fr5.png" alt="" width="330">
+                            <img class="img-fluid" src="../images/rdr2.png" alt="" width="570">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <h1 class="display-6">Simulación</h1>
+                        </div>
+                        <div class="col-12">
+                            <img class="img-fluid" src="../images/fsx.png" alt="" width="500">
+                            <img class="img-fluid" src="../images/ets2.png" alt="" width="500">
+                            <img class="img-fluid" src="../images/fs20.png" alt="" width="430">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,7 +125,6 @@
 
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/main.js"></script>
-    <script src="../js/login.js"></script>
 </body>
 
 </html>
