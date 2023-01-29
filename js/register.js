@@ -1,10 +1,11 @@
 $(document).ready(function () {
     // User Class Definition
     class Usuario {
-        constructor(nombre, correoElectronico, fechaNacimiento) {
+        constructor(nombre, correoElectronico, fechaNacimiento, contrasenha) {
             this.nombre = nombre;
             this.correoElectronico = correoElectronico;
             this.fechaNacimiento = fechaNacimiento;
+            this.contrasenha = contrasenha;
         }
     }
 
@@ -26,8 +27,14 @@ $(document).ready(function () {
                         let nombre = $("#username").val();
                         let email = $("#inputEmail4").val();
                         let fechaNac = $("#fechaNac").val();
-                        var user = new Usuario(nombre, email, fechaNac);
+                        let contrasenha = $("#inputPassword4").val();
+                        var user = new Usuario(nombre, email, fechaNac, contrasenha);
                         localStorage.setItem("user", JSON.stringify(user));
+                        let success = document.createElement("h1");
+                        $(success).html("Usuario creado satisfactoriamente");
+                        $(success).addClass("display-6");
+                        $(form).after(success);
+                        $(form).remove();
                     }
                     form.classList.add('was-validated')
                 }, false)

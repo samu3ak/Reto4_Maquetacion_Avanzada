@@ -41,10 +41,15 @@
             </div>
             <div class="col-lg-2 col-sm-12 text-lg-end text-sm-center mt-sm-2">
                 <div>
-                    <a href="../html/login.html"><button type="button" class="btn btn-light text-dark fw-bolder">Iniciar
+                    <a href="./profile.html" id="profileButton" hidden><img class="img-thumbnail rounded-circle"
+                            src="../images/profile_pic_def.jpg" alt="Profile Picture" height="50" width="50"></a>
+                    <a href="../html/login.html"><button type="button" class="btn btn-light text-dark fw-bolder"
+                            id="loginButton">Iniciar
                             Sesión</button></a>
-                    <a href="../html/register.html"><button type="button"
-                            class="btn btn-warning fw-bolder">Registrarse</button></a>
+                    <a href="../html/register.html"><button type="button" class="btn btn-warning fw-bolder"
+                            id="registerButton">Registrarse</button></a>
+                    <button type="button" class="btn btn-danger fw-bolder" id="logoutButton" hidden>Cerrar
+                        Sesión</button>
                 </div>
             </div>
         </div>
@@ -126,6 +131,7 @@
 
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/register.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

@@ -8,6 +8,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- JQuery Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
@@ -38,10 +41,14 @@
             </div>
             <div class="col-lg-2 col-sm-12 text-lg-end text-sm-center mt-sm-2">
                 <div>
-                    <a href="../html/login.html"><button type="button" class="btn btn-light text-dark fw-bolder">Iniciar
+                    <a href="./profile.html" id="profileButton" hidden><img class="img-thumbnail rounded-circle" src="../images/profile_pic_def.jpg" alt="Profile Picture" height="50" width="50"></a>
+                    <a href="../html/login.html"><button type="button" class="btn btn-light text-dark fw-bolder"
+                            id="loginButton">Iniciar
                             Sesión</button></a>
-                    <a href="../html/register.html"><button type="button"
-                            class="btn btn-warning fw-bolder">Registrarse</button></a>
+                    <a href="../html/register.html"><button type="button" class="btn btn-warning fw-bolder"
+                            id="registerButton">Registrarse</button></a>
+                    <button type="button" class="btn btn-danger fw-bolder" id="logoutButton" hidden>Cerrar
+                        Sesión</button>
                 </div>
             </div>
         </div>
@@ -56,14 +63,14 @@
                     <img class="img-fluid" src="../images/spelunky.png" width="350" height="500">
                 </div>
                 <div class="col-lg-2 col-sm-12">
-                    <form class="row g-5">
+                    <form class="row g-5 needs-validation">
                         <div class="col-12 text-center">
-                            <label for="inputEmail4" class="form-label">Nombre de usuario</label>
-                            <input type="email" class="form-control text-center" id="inputEmail4">
+                            <label for="username" class="form-label">Nombre de usuario</label>
+                            <input type="text" class="form-control text-center" id="username" required>
                         </div>
                         <div class="col-12 text-center">
                             <label for="inputPassword4" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control text-center" id="inputPassword4">
+                            <input type="password" class="form-control text-center" id="inputPassword4" required>
                         </div>
                         <div class="col-12 text-center mt-5">
                             <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
@@ -91,6 +98,8 @@
         </script>
 
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/login.js"></script>
 </body>
 
 </html>

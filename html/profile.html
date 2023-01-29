@@ -8,6 +8,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- JQuery Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
@@ -37,29 +40,35 @@
             </div>
             <div class="col-lg-2 col-sm-12 text-lg-end text-sm-center mt-sm-2">
                 <div>
-                    <a href="../html/login.html"><button type="button" class="btn btn-light text-dark fw-bolder">Iniciar
+                    <a href="./profile.html" id="profileButton" hidden><img class="img-thumbnail rounded-circle"
+                            src="../images/profile_pic_def.jpg" alt="Profile Picture" height="50" width="50"></a>
+                    <a href="../html/login.html"><button type="button" class="btn btn-light text-dark fw-bolder"
+                            id="loginButton">Iniciar
                             Sesión</button></a>
-                    <a href="../html/register.html"><button type="button"
-                            class="btn btn-warning fw-bolder">Registrarse</button></a>
+                    <a href="../html/register.html"><button type="button" class="btn btn-warning fw-bolder"
+                            id="registerButton">Registrarse</button></a>
+                    <button type="button" class="btn btn-danger fw-bolder" id="logoutButton" hidden>Cerrar
+                        Sesión</button>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="container-fluid profileView py-5 mt-5">
+        <div class="container-fluid py-5 mt-5">
             <div class="row">
-                <div class="col-5">
+                <div class="col-lg-5 col-md-12 col-sm-12">
                     <div class="row text-center mt-5">
-                        <div class="col-12">
-                            <img class="img-fluid rounded-circle" src="../images/logo.png">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <img class="img-fluid rounded-circle" src="../images/profile_pic_def.jpg" height="250"
+                                width="250">
                         </div>
                     </div>
                     <div class="row border border-2 border-primary rounded-3 bg-body py-5 m-4">
                         <div class="col-12">
                             <div class="row">
                                 <div class="col-6">
-                                    <h1 class="display-6">Usuario</h1>
+                                    <h1 class="display-6" id="nombreUsuario">Usuario</h1>
                                 </div>
                                 <div class="col-6 text-end">
                                     <div class="dropdown">
@@ -83,16 +92,29 @@
                                     deleniti vitae doloremque laborum molestiae, obcaecati odio hic, perspiciatis nam
                                     distinctio? Sequi dicta aperiam, maxime nisi sit distinctio expedita repellendus.
                                 </p>
-                                <p>Fecha creación de perfil: DD-MM-AAAA</p>
-                                <p>Fecha de cumpleaños: DD-MM</p>
-                                <p>Géneros favoritos: </p>
+                                <p>Miembro desde: Hace menos de 1 año</p>
+                                <p id="fechaNacimiento">Fecha de nacimiento:</p>
+                                <p>Géneros favoritos: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint,
+                                    ratione!</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-7 bg-info py-5">
-                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias culpa impedit adipisci nihil
-                        similique minima neque beatae distinctio ea dolorum.</h1>
+                <div class="col-lg-7 col-md-12 col-sm-12 bg-body py-5 border border-2 border-primary rounded-3">
+                    <div class="row justify-content-center align-items-center g-5">
+                        <div class="col-12">
+                            <h1 class="display-6">Juegos Más Jugados</h1>
+                            <img class="img-fluid" src="../images/dk3.jpg" alt="" height="150" width="150">
+                            <img class="img-fluid" src="../images/gtav.jpg" alt="" height="200" width="200">
+                            <img class="img-fluid" src="../images/isaac.jpg" alt="" height="300" width="300">
+                        </div>
+                        <div class="col-12">
+                            <h1 class="display-6">Ordenados de mayor a menos nota por el usuario</h1>
+                            <img class="img-fluid" src="../images/hollow_knight.jpg" alt="" height="300" width="300">
+                            <img class="img-fluid" src="../images/etg.jpg" alt="" height="200" width="200">
+                            <img class="img-fluid" src="../images/fifa.jpg" alt="" height="150" width="150">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -113,6 +135,8 @@
         </script>
 
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/profile.js"></script>
 </body>
 
 </html>
