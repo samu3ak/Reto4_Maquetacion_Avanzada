@@ -8,6 +8,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- JQuery Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
@@ -56,22 +59,45 @@
                     <img class="img-fluid" src="../images/spelunky.png" width="350" height="500">
                 </div>
                 <div class="col-lg-2 col-sm-12">
-                    <form class="row g-5">
+                    <form class="row g-5 needs-validation" novalidate>
                         <div class="col-12 text-center">
                             <label for="inputEmail4" class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control text-center" id="inputEmail4">
+                            <input type="email" class="form-control text-center" id="inputEmail4" required>
+                            <div class="invalid-feedback">
+                                Escriba un correo electrónico válido
+                            </div>
                         </div>
                         <div class="col-12 text-center">
                             <label for="username" class="form-label">Usuario</label>
-                            <input type="text" class="form-control text-center" id="username">
+                            <input type="text" class="form-control text-center" id="username" required>
+                            <div class="invalid-feedback">
+                                Elija un nombre de usuario
+                            </div>
                         </div>
                         <div class="col-12 text-center">
                             <label for="inputPassword4" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control text-center" id="inputPassword4">
+                            <input type="password" class="form-control text-center" id="inputPassword4" required>
+                            <div class="invalid-feedback">
+                                Elija una contraseña
+                            </div>
                         </div>
                         <div class="col-12 text-center">
-                            <label for="inputPassword4" class="form-label">Fecha de nacimiento</label>
-                            <input type="password" class="form-control text-center" id="inputPassword4">
+                            <label for="fechaNac" class="form-label">Fecha de nacimiento</label>
+                            <input type="date" class="form-control text-center" id="fechaNac" required>
+                            <div class="invalid-feedback">
+                                Seleccione una fecha correcta
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Acepto los términos y condiciones
+                                </label>
+                                <div class="invalid-feedback">
+                                    Debes aceptar para poder registrarte
+                                </div>
+                            </div>
                         </div>
                         <div class="col-12 text-center mt-5">
                             <button type="submit" class="btn btn-primary">Registrarse</button>
@@ -99,6 +125,7 @@
         </script>
 
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/register.js"></script>
 </body>
 
 </html>
